@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InnerHTML Example</title>
+</head>
+<body>
+    <div id="content">
+        <p>This is a paragraph.</p>
+    </div>
+    <button onclick="addElement()">Add Element</button>
+
+    <script>
+        function addElement() {
+            document.getElementById("content").innerHTML += "<p>This is a new paragraph added!</p>";
+
+            /* The addition assignment ( += ) operator performs addition 
+            (which is either numeric addition or string concatenation) 
+            on the two operands and assigns the result to the left operand */
+        }
+    </script>
+</body>
+</html>
